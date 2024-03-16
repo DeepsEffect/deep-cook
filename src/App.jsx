@@ -1,11 +1,13 @@
 import "./App.css";
+import Header from "./components/Header/Header";
 function App() {
   return (
-    <>
-      <h2 className="text-4xl font-lexend text-center border border-green-500">
-        Hello World
-      </h2>
-    </>
+    <div className="container lg:px-24 mx-auto font-lexend">
+      <Header></Header>
+      <main>
+
+      </main>
+    </div>
   );
 }
 
