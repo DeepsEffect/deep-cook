@@ -2,10 +2,11 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Card from "../Card/Card";
 import Sidebar from "../Sidebar/Sidebar";
+import { toast } from "react-toastify";
 
 const Cards = () => {
   const [recipes, setRecipes] = useState([]);
-  const[sidebar, setSidebar] = useState([]);
+  const [sidebar, setSidebar] = useState([]);
   useEffect(() => {
     fetch("./recipes.json")
       .then((res) => res.json())
@@ -13,11 +14,15 @@ const Cards = () => {
   }, []);
 
   const handleWantToCook = (recipe) => {
-    const newSidebar = [...sidebar, recipe];
-    console.log('recipe clicked', recipe)
-    setSidebar(newSidebar);
+    if (sidebar.includes(recipe)) {
+      toast("This recipe is already selected, try some other ones :D");
+    } else {
+      const newSidebar = [...sidebar, recipe];
+      console.log("recipe clicked", recipe);
+      setSidebar(newSidebar);
+    }
   };
-  
+
   return (
     <section className="mt-16 text-center min-h-screen">
       <h2 className="text-3xl font-bold ">Our Recipes</h2>
