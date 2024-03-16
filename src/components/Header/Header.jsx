@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="lg:mt-8">
+    <header className="lg:mt-8 container lg:px-24 mx-auto font-lexend">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -38,10 +38,10 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">DeepRecipe</a>
+          <a className="btn btn-ghost text-2xl font-bold">DeepRecipe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-[#150B2BB3] text-base font-normal">
             <li>
               <a>Home</a>
             </li>
