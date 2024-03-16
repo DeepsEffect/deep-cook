@@ -6,10 +6,9 @@ function App() {
   return (
     <div className="container lg:px-24 mx-auto font-lexend">
       <Header></Header>
-      <Banner></Banner>
-      <Cards></Cards>
       <main>
-
+        <Banner></Banner>
+        <Cards></Cards>
       </main>
     </div>
   );

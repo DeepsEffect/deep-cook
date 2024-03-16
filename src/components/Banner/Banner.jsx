@@ -21,8 +21,8 @@ const Banner = () => {
               preferences.
             </p>
             <div className="flex gap-4 justify-center">
-              <button className="btn btn-error">Explore now</button>
-              <button className="btn btn-outline btn-error">Your feedback</button>
+              <button className="btn btn-error rounded-full">Explore now</button>
+              <button className="btn btn-outline btn-error rounded-full">Your feedback</button>
             </div>
           </div>
         </div>
