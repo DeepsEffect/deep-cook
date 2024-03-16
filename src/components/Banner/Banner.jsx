@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <section>
       <div
-        className="hero min-h-[600px] mt-8 rounded-2xl"
+        className="hero lg:min-h-[600px] mt-8 lg:rounded-2xl"
         style={{
           backgroundImage:
             "linear-gradient(0deg, rgba(21, 11, 43, 0.90) 0%, rgba(21, 11, 43, 0.00) 100%), url(https://plus.unsplash.com/premium_photo-1663126620579-567a7ccc48f7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",

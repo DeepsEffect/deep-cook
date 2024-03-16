@@ -6,7 +6,7 @@
       "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushroom"],
       "preparing_time": 30,
       "calories": 320,
-      "recipe_image": "path_to_image1.jpg"
+      "recipe_image": "https://plus.unsplash.com/premium_photo-1664475934279-2631a25c42ce?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "recipe_id": 2,
@@ -15,7 +15,7 @@
       "ingredients": ["300 g cauliflower", "200 g carrots", "150 g peas", "1 can coconut milk", "2 tbsp curry powder"],
       "preparing_time": 45,
       "calories": 250,
-      "recipe_image": "path_to_image2.jpg"
+      "recipe_image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "recipe_id": 3,
@@ -24,7 +24,7 @@
       "ingredients": ["400 g spaghetti", "200 g bacon", "4 eggs", "100 g Parmesan cheese", "2 cloves garlic"],
       "preparing_time": 25,
       "calories": 450,
-      "recipe_image": "path_to_image3.jpg"
+      "recipe_image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "recipe_id": 4,
@@ -33,7 +33,7 @@
       "ingredients": ["200 g lettuce", "150 g cucumber", "100 g cherry tomatoes", "100 g feta cheese", "50 g olives"],
       "preparing_time": 15,
       "calories": 180,
-      "recipe_image": "path_to_image4.jpg"
+      "recipe_image": "https://plus.unsplash.com/premium_photo-1690561082029-0eb2ed65a09f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "recipe_id": 5,
@@ -42,7 +42,7 @@
       "ingredients": ["300 g pizza dough", "200 g mozzarella cheese", "150 g pepperoni", "1 bell pepper", "1 onion"],
       "preparing_time": 40,
       "calories": 380,
-      "recipe_image": "path_to_image5.jpg"
+      "recipe_image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "recipe_id": 6,
@@ -51,7 +51,7 @@
       "ingredients": ["1 cup mixed berries", "1 banana", "200 ml almond milk", "50 g granola", "1 tbsp honey"],
       "preparing_time": 10,
       "calories": 200,
-      "recipe_image": "path_to_image6.jpg"
+      "recipe_image": "https://images.unsplash.com/photo-1600718374662-0483d2b9da44?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
   
