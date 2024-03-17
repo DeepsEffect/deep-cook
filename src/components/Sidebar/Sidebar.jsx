@@ -1,5 +1,7 @@
+import CurrentlyCooking from "../CurrentlyCooking/CurrentlyCooking";
+
 /* eslint-disable react/prop-types */
-const Sidebar = ({ sidebar, handleDelete }) => {
+const Sidebar = ({ sidebar, handleDelete, handleCurrentlyCooking, cooking }) => {
   return (
     <div className="hidden lg:flex lg:flex-col">
       <h2 className="text-2xl font-bold">Want to cook: {sidebar.length}</h2>
@@ -22,7 +24,13 @@ const Sidebar = ({ sidebar, handleDelete }) => {
               <td className="px-4 py-4">{item.preparing_time} minutes</td>
               <td className="px-4 py-4">{item.calories} calories</td>
               <td className="px-4 py-4 rounded-r-xl">
-                <button onClick={()=>handleDelete(item.recipe_id)} className="btn btn-error text-white rounded-full">
+                <button
+                  onClick={() => {
+                    handleDelete(item.recipe_id);
+                    handleCurrentlyCooking(item);
+                  }}
+                  className="btn btn-error text-white rounded-full"
+                >
                   Preparing
                 </button>
               </td>
@@ -30,6 +38,7 @@ const Sidebar = ({ sidebar, handleDelete }) => {
           ))}
         </tbody>
       </table>
+      <CurrentlyCooking cooking={cooking}></CurrentlyCooking>
     </div>
   );
 };

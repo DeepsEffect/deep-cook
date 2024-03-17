@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 const Cards = () => {
   const [recipes, setRecipes] = useState([]);
   const [sidebar, setSidebar] = useState([]);
+  const [cooking, setCooking] = useState([]);
 
   useEffect(() => {
     fetch("./recipes.json")
@@ -19,15 +20,21 @@ const Cards = () => {
       toast("This recipe is already selected, try some other ones :D");
     } else {
       const newSidebar = [...sidebar, recipe];
-      // console.log("recipe clicked", recipe);
       setSidebar(newSidebar);
     }
   };
 
-  const handleDelete = (id) =>{
-    const newSidebar = sidebar.filter(item => item.recipe_id !== id);
+  const handleDelete = (id) => {
+    const deletedItem = sidebar.find((item) => item.recipe_id === id);
+    const newSidebar = sidebar.filter((item) => item.recipe_id !== id);
     setSidebar(newSidebar);
-  }
+    setCooking([...cooking, deletedItem]);
+  };
+
+  const handleCurrentlyCooking = (recipe) => {
+    setCooking([...cooking, recipe]);
+    // console.log(cooking);
+  };
 
   return (
     <section className="mt-16 text-center min-h-screen">
@@ -50,7 +57,12 @@ const Cards = () => {
           ))}
         </div>
         <div className="border-2 rounded-xl lg:w-2/5 p-4">
-          <Sidebar handleDelete={handleDelete} sidebar={sidebar}></Sidebar>
+          <Sidebar
+            cooking={cooking}
+            handleCurrentlyCooking={handleCurrentlyCooking}
+            handleDelete={handleDelete}
+            sidebar={sidebar}
+          ></Sidebar>
         </div>
       </div>
     </section>
