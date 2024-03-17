@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const Sidebar = ({ sidebar }) => {
+const Sidebar = ({ sidebar, handleDelete }) => {
   return (
     <div className="hidden lg:flex lg:flex-col">
       <h2 className="text-2xl font-bold">Want to cook: {sidebar.length}</h2>
@@ -22,7 +22,7 @@ const Sidebar = ({ sidebar }) => {
               <td className="px-4 py-4">{item.preparing_time} minutes</td>
               <td className="px-4 py-4">{item.calories} calories</td>
               <td className="px-4 py-4 rounded-r-xl">
-                <button className="btn btn-error text-white rounded-full">
+                <button onClick={()=>handleDelete(item.recipe_id)} className="btn btn-error text-white rounded-full">
                   Preparing
                 </button>
               </td>

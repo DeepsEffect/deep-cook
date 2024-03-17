@@ -19,10 +19,15 @@ const Cards = () => {
       toast("This recipe is already selected, try some other ones :D");
     } else {
       const newSidebar = [...sidebar, recipe];
-      console.log("recipe clicked", recipe);
+      // console.log("recipe clicked", recipe);
       setSidebar(newSidebar);
     }
   };
+
+  const handleDelete = (id) =>{
+    const newSidebar = sidebar.filter(item => item.recipe_id !== id);
+    setSidebar(newSidebar);
+  }
 
   return (
     <section className="mt-16 text-center min-h-screen">
@@ -45,7 +50,7 @@ const Cards = () => {
           ))}
         </div>
         <div className="border-2 rounded-xl lg:w-2/5 p-4">
-          <Sidebar sidebar={sidebar}></Sidebar>
+          <Sidebar handleDelete={handleDelete} sidebar={sidebar}></Sidebar>
         </div>
       </div>
     </section>
