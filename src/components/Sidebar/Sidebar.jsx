@@ -14,7 +14,10 @@ const Sidebar = ({ sidebar }) => {
         </thead>
         <tbody>
           {sidebar.map((item, idx) => (
-            <tr className="bg-gray-100 text-xs lg:text-base font-fira" key={idx}>
+            <tr
+              className="bg-gray-100 text-xs lg:text-base font-fira"
+              key={idx}
+            >
               <td className="px-4 py-4 rounded-l-xl">{item.recipe_name}</td>
               <td className="px-4 py-4">{item.preparing_time} minutes</td>
               <td className="px-4 py-4">{item.calories} calories</td>

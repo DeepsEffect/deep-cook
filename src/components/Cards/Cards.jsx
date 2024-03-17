@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 const Cards = () => {
   const [recipes, setRecipes] = useState([]);
   const [sidebar, setSidebar] = useState([]);
+
   useEffect(() => {
     fetch("./recipes.json")
       .then((res) => res.json())
