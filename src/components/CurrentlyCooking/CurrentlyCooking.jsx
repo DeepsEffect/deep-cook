@@ -1,5 +1,13 @@
 /* eslint-disable react/prop-types */
 const CurrentlyCooking = ({ cooking }) => {
+  let totalTime = 0;
+  let totalCalories = 0;
+
+  cooking.forEach((recipe) => {
+    totalTime += recipe.preparing_time;
+    totalCalories += recipe.calories;
+  });
+
   return (
     <div className="mt-4">
       <h2 className="text-2xl font-bold">
@@ -28,6 +36,11 @@ const CurrentlyCooking = ({ cooking }) => {
           ))}
         </tbody>
       </table>
+      {/* counting total time and calories */}
+      <div className="mt-4 text-xl font-medium text-[#282828CC]">
+        <h2>Total Time: {totalTime} minutes</h2>
+        <h2>Total Calories: {totalCalories} calories</h2>
+      </div>
     </div>
   );
 };

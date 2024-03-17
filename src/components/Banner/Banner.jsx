@@ -11,9 +11,9 @@ const Banner = () => {
         <div className=" rounded-2xl "></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-2xl">
-            <h1 className="mb-5 text-3xl font-bold">
+            <h1 className="mb-5 text-4xl font-bold">
               Crafting Culinary Mastery: Elevate Your Palate with Bespoke Dining
-              Experiences at{" "}
+              Experience
             </h1>
             <p className="mb-5">
               Explore the art of gastronomy and ignite your taste buds with our

@@ -17,7 +17,7 @@ const Cards = () => {
 
   const handleWantToCook = (recipe) => {
     if (sidebar.includes(recipe)) {
-      toast("This recipe is already selected, try some other ones :D");
+      toast.error("This recipe is already selected, try some other ones :D");
     } else {
       const newSidebar = [...sidebar, recipe];
       setSidebar(newSidebar);
@@ -29,6 +29,7 @@ const Cards = () => {
     const newSidebar = sidebar.filter((item) => item.recipe_id !== id);
     setSidebar(newSidebar);
     setCooking([...cooking, deletedItem]);
+    toast("Let Him Cook 🔥");
   };
 
   const handleCurrentlyCooking = (recipe) => {

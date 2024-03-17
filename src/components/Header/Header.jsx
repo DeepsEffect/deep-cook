@@ -38,7 +38,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl font-bold">DeepRecipe</a>
+          <a className="btn btn-ghost text-2xl font-bold">DeepCook</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-[#150B2BB3] text-base font-normal">
